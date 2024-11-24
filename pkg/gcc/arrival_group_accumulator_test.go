@@ -70,7 +70,7 @@ func TestArrivalGroupAccumulator(t *testing.T) {
 					},
 				},
 				arrival:   time.Time{}.Add(20 * time.Millisecond),
-				departure: time.Time{}.Add(3 * time.Millisecond),
+				departure: time.Time{},
 			}},
 		},
 		{
@@ -102,7 +102,7 @@ func TestArrivalGroupAccumulator(t *testing.T) {
 						},
 					},
 					arrival:   time.Time{}.Add(20 * time.Millisecond),
-					departure: time.Time{}.Add(3 * time.Millisecond),
+					departure: time.Time{}.Add(0 * time.Millisecond),
 				},
 				{
 					packets: []cc.Acknowledgment{
